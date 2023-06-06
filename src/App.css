@@ -1,12 +1,12 @@
 /************ Custom Font ************/
 @font-face {
 	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Bold.ttf');
+	src: url('./assets/font/Roboto-Bold.ttf');
 	font-weight: 700;
 }
 @font-face {
 	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Medium.ttf');
+	src: url('./assets/font/Roboto-Medium.ttf');
 	font-weight: 500;
 }
 @font-face {
@@ -98,7 +98,7 @@ nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
+  font-weight: 500;
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
@@ -153,16 +153,24 @@ span.navbar-text {
 .navbar-text button {
   font-weight: 700;
   color: #fff;
-  border: 1px solid #fff;
+  /* border: 1px solid #E61A54; */
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
 	position: relative;
-	background-color: transparent;
+	background-color: #E61A54;
 	transition: 0.3s ease-in-out;
+  overflow: hidden; /* Añadimos esta propiedad para ocultar el contenido que se desborda */
 }
 .navbar-text button span {
   z-index: 1;
+  transition: color 0.3s ease-in-out; /* Agregamos una transición para el cambio de color del texto */
+}
+.navbar-text button:hover {
+  background-color: #fff;
+}
+.navbar-text button:hover span {
+  color: #121212; /* Cambiamos el color del texto a negro */
 }
 .navbar-text button::before {
   content: "";
@@ -170,20 +178,17 @@ span.navbar-text {
   height: 100%;
   position: absolute;
   background-color: #fff;
-  left: 0;
+  left: -100%; /* Cambiamos el valor de "left" a -100% para que inicie fuera de la vista */
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.navbar-text button:hover {
-  color: #121212;
-}
+
 .navbar-text button:hover::before {
-	content: "";
-	width: 100%;
-	height: 100%;
-	position: absolute;
+  width: 200%; /* Cambiamos el valor de "width" a 200% para que cubra completamente el botón */
+  left: 0; /* Restablecemos el valor de "left" a 0 para que se muestre en la vista */
 }
+
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
@@ -230,6 +235,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+/************ Tittle Css *************/
+.custom-text {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 116px;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.pink-text {
+  color: #E61A54;
+}
+
+/************ Button Css ***************/
+
+.container-e {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.custom-buttom {
+  position: relative;
+  background: #E61A54;
+  border-radius: 5px;
+  color: #F4F4F4;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  margin-left: 0px;
+  
+}
+
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -258,10 +302,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
-  font-size: 18px;
+  color: #F4F4F4;
+  font-weight: 400;
+  font-size: 20px;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
+  line-height: 28px;
   width: 96%;
 }
 .banner button {
