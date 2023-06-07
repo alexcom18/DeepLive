@@ -64,21 +64,70 @@ export const Banner = () => {
                   </div>
 
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  
-                    <button class="custom-buttom">Explorar</button>
-                  
+
+                  <button class="custom-buttom">Explorar</button>
+
 
                   {/* <button onClick={() => console.log('connect')}>Explorar <ArrowRightCircle size={25} /></button> */}
                 </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img" />
-                </div>}
-            </TrackVisibility>
+            <div className="loader">
+              <style>
+                {`
+        .loader {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+        }
+        
+        .circle {
+          position: absolute;
+          border-radius: 50%;
+          border: 2px solid white;
+          background-color: transparent;
+        }
+        
+        .circle1 {
+          width: 140px;
+          height: 140px;
+          
+        }
+        
+        .circle2 {
+          width: 220px;
+          height: 220px;
+          opacity: 0.6;
+        }
+        
+        .circle3 {
+          width: 300px;
+          height: 300px;
+          opacity: 0.3;
+        }
+        
+        .circle1:before {
+          content: "";
+          position: absolute;
+          top: calc(50% - 26px);
+          left: calc(50% - 30px);
+          width: 0;
+          height: 0;
+          transform: rotate(90deg);
+          border-style: solid;
+          border-width: 0 36px 62px 36px;
+          border-color: transparent transparent white transparent;
+      }
+        `}
+              </style>
+              <div className="circle circle1"></div>
+              <div className="circle circle2"></div>
+              <div className="circle circle3"></div>
+            </div>
           </Col>
         </Row>
       </Container>
