@@ -8,7 +8,6 @@ import customPrevIcon from "../assets/img/icons/flechas-arriba1.svg";
 import customNextIcon from "../assets/img/icons/flechas-arriba 2.svg";
 
 const options = {
-  // Configura las opciones del carrusel según tus necesidades
   items: 3,
   loop: true,
   margin: 300,
@@ -90,15 +89,6 @@ function Carusel() {
           <div class="container-img">
             <img src={require("../assets/img/carrusel/Rectangle 5.png")} />
           </div>
-          {/* <div class="container-img">
-          <img src={require("../assets/img/banner2-bg.png")} />
-        </div>
-        <div class="container-img">
-          <img src={require("../assets/img/banner2-bg.png")} />
-        </div>
-        <div class="container-img">
-          <img src={require("../assets/img/banner2-bg.png")} />
-        </div> */}
         </OwlCarousel>
       </div>
     </section>

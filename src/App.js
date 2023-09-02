@@ -8,6 +8,8 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import Carusel from "./components//Carusel";
+import {ShortDescription} from "./components/Description"
+import ToursCarrusel from "./components/ToursCarrusel"
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       <NavBar />
       <Carusel/>
       <Banner />
-      <Skills />
+      <ShortDescription />
+      <ToursCarrusel />
+      {/* <Skills /> */}
       <Projects />
       <Contact />
       <Footer />

@@ -31,9 +31,10 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  /* background-color: #121212 !important; */
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  background-color: #030d2d !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -278,7 +279,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 360px 0 600px 0;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url('./assets/img/banner2-bg.png');
+  /* background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url('./assets/img/banner2-bg.png'); */
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0) , #030D2D), url('./assets/img/banner2-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
