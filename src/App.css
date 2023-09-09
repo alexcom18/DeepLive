@@ -74,6 +74,9 @@ input:focus, textarea:focus, select:focus {
 		padding: 0 150px;
 	}
 }
+.m-section {
+  margin: 4.8em 0em;
+}
 
 p.success {
 	color: green;

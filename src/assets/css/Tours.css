@@ -1,0 +1,95 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content .text span {
+  color: #E61A54;
+}
+.content .carrusel{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.content .owl-theme .card{
+    width: 100%;
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.content .owl-theme .card .tour-img{
+    width: 100%;
+    height: 324px;
+}
+.content .owl-theme .card .tour-img img{    
+    width: 100%;
+    height: 324px;
+    object-fit: cover;
+}
+
+.description-content{
+    display: flex;
+    flex-direction: column;
+}
+.description-content .descriptio{
+    padding: 0.5em 1.2em 0;
+}
+.description-content .descriptio h4{
+    color: #E61A54;
+    font-weight: 700;
+    font-size: 11px;
+}
+.descriptio h1{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+.description-content .price-content{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 0 1.2em 0;
+}
+.description-content .price-content .prices{
+    display: flex;
+    flex-direction: column;
+}
+
+.description-content .price-content .prices p, h3{
+    margin: 0;
+}
+.prices p{
+    font-weight: 500;
+    font-size: 10px;
+}
+.prices h3{
+    font-weight: 700;
+    font-size: 24px;
+    color: #E61A54;
+}
+hr{
+    margin: 0px 0 5px;
+}
+
+
+/* nav */
+.owl-item .activ{
+    display: flex;
+    justify-content: center;
+}
+.owl-theme .owl-nav{
+    position: absolute;
+    top: -5em;
+    right: -1px;
+}
+
+
+@media(min-width:1025px){
+    .content .owl-theme .card{
+        width: 321px;
+        height: 476px;
+        display: flex;
+        flex-direction: column;
+    }
+}

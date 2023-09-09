@@ -10,6 +10,7 @@ import { Footer } from "./components/Footer";
 import Carusel from "./components//Carusel";
 import {ShortDescription} from "./components/Description"
 import ToursCarrusel from "./components/ToursCarrusel"
+import Cursos from "./components/Cursos"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Banner />
       <ShortDescription />
       <ToursCarrusel />
+      <Cursos/>
       {/* <Skills /> */}
       <Projects />
       <Contact />
