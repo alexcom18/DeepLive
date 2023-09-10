@@ -10,6 +10,7 @@ const options = {
   items: 4,
   loop: true,
   margin: 300,
+  autoplay: true,
   nav: true,
   responsive: {
     0: {
@@ -27,7 +28,7 @@ const options = {
     1020: {
       items: 3,
       margin: 55,
-    }
+    },
   },
   navText: [
     `<img src="${customPrevIcon}" alt="Custom Prev Icon" />`,
@@ -46,30 +47,51 @@ function Cursos() {
         </div>
         <OwlCarousel className="owl-theme" {...options}>
           <div className="card">
-            <div className="image">
-                <img src={require('../assets/img/Clip-group.png')}/>
+            <div className="container-image">
+              <div className="circle">
+                <img src={require("../assets/img/Clip-group.png")} />
+              </div>
             </div>
             <div className="description">
-                <h1>Curso #1</h1>
-                <h4>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</h4>
+              <h1>Curso #1</h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              </p>
             </div>
           </div>
           <div className="card">
-            <div className="image">
-                <img src={require('../assets/img/Group-2.png')}/>
+            <div className="container-image">
+              <div className="circle">
+              <img src={require("../assets/img/Group.png")} />
+              </div>
             </div>
             <div className="description">
-                <h1>Curso #1</h1>
-                <h4>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</h4>
+              <h1>Curso #2</h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              </p>
             </div>
           </div>
           <div className="card">
-            <div className="image">
-                <img src={require('../assets/img/Group.png')}/>
+            <div className="container-image">
+              <div className="circle">
+              <img src={require("../assets/img/Group-2.png")} />
+              </div>
             </div>
             <div className="description">
-                <h1>Curso #1</h1>
-                <h4>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</h4>
+              <h1>Curso #3</h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet. Amet minim
+                mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              </p>
             </div>
           </div>
         </OwlCarousel>
@@ -78,4 +100,4 @@ function Cursos() {
   );
 }
 
-export default Cursos
+export default Cursos;

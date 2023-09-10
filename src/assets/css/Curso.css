@@ -3,3 +3,41 @@
     padding: 2.8em 0;
 
 }
+.content-description .title-content span{
+    color: #E61A54;
+}
+
+.content-description .card{
+    width: 435px;
+    height: 366px;
+    padding: 2em 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content-description .container-image {
+    display: flex;
+    width: 100%;
+    flex: 0 1 30%;
+}
+.content-description .container-image .circle{
+    display: flex;
+    width: 84px;
+    height: 84px;
+    background-color: #E61A54;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 70%;
+}
+.content-description .container-image .circle img{
+    width: 53px;
+    height: 53px;
+}
+.owl-nav{
+    display: none;
+}
+@media (min-width:700px) {
+    .owl-nav{
+        display: block;
+    }
+}

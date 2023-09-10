@@ -11,6 +11,8 @@ import Carusel from "./components//Carusel";
 import {ShortDescription} from "./components/Description"
 import ToursCarrusel from "./components/ToursCarrusel"
 import Cursos from "./components/Cursos"
+import Snorkeling from './components/Snorkeling';
+import Testimonio from './components/Testimonio';
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
       <ShortDescription />
       <ToursCarrusel />
       <Cursos/>
+      <Snorkeling/>
+      <Testimonio/>
       {/* <Skills /> */}
-      <Projects />
+      {/* <Projects /> */}
       <Contact />
       <Footer />
     </div>
