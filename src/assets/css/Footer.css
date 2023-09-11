@@ -57,4 +57,7 @@
         height: 100%;
         justify-content: center;
     }
+    .footer .content .logo-container{
+        justify-content: start;
+    }
 }
