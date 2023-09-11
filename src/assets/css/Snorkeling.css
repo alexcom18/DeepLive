@@ -9,6 +9,7 @@
     width: 435px;
     height: 532px;
     justify-content: flex-end;
+    cursor: pointer;
 }
 .card-snorkel .background-card{
     position: absolute;
