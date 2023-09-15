@@ -8,3 +8,28 @@
 .colum-content .text-description {
     width: 100%;
 }
+.testimonios{
+    background-color: white;
+    
+}
+.testimonios .description-image{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 2em;
+}
+.testimonios .description-image p{
+color: black;
+}
+.testimonios .description-image .image-start{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+.testimonios .description-image .image-start .people{
+    width: 3.8em;
+    height: 3.8em;
+    border-radius: 100%;
+    border: none;
+}
+

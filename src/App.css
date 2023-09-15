@@ -518,7 +518,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  /* background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); */
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -528,6 +528,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
+  color: #E61A54;
 }
 .contact form input, .contact form textarea {
   width: 100%;
@@ -557,8 +558,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button {
   font-weight: 700;
-  color: #000;
-  background-color: #fff;
+  color: white;
+  background-color: #E61A54;
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
@@ -571,11 +572,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .contact form button:hover {
-  color: #fff;
+  color: #E61A54;
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: white;
   width: 0;
   height: 100%;
   position: absolute;
@@ -586,6 +587,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+.row-contac{
+  gap: 1em 0;
+}
+.content-image{
+  display: flex;
+  justify-content: center;
+}
+.contac-description{
+  padding-top: 1.8em;
+}
+@media(min-width:576px){
+  .contac-description{
+    padding-top: 0;
+  }
+  .row-contac{
+    gap: 1.8em 0;
+  } 
+}
+
+.button-contac{
+  display: flex;
+  justify-content: end;
+  /* background-color: #E61A54; */
+}
+.button-contac button{
+  /* background-color: #E61A54;
+  color: white; */
 }
 
 /************ Footer Css ************/

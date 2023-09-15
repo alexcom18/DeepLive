@@ -42,14 +42,41 @@ function Testimonio() {
         </div>
         <div className="carrusel">
           <OwlCarousel className="owl-theme" {...options}>
-            <div className="item">
-              <img src={require("../assets/img/carrusel/Rectangle 14.png")} alt="Imagen 1" />
+            <div className="item testimonios">
+              <div className="description-image">
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do</p>
+                <div className="image-start">
+                  <img className="people" src={require("../assets/img/carrusel/Photo.png")} alt="Imagen 1" />
+                  <div className="start-name">
+                    <p><strong> George Danny</strong></p>
+                    <img className="start" src={require("../assets/img/carrusel/Group 174.png")} alt="Imagen 1"  />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="item">
-              <img src={require("../assets/img/carrusel/Rectangle 14.png")} alt="Imagen 2" />
+            <div className="item testimonios">
+              <div className="description-image">
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                <div className="image-start">
+                  <img className="people" src={require("../assets/img/carrusel/image 1.png")} alt="Imagen 1" />
+                  <div className="start-name">
+                    <p><strong> Sarah Whiteman</strong></p>
+                    <img className="start" src={require("../assets/img/carrusel/Group 174.png")} alt="Imagen 1"  />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="item">
-              <img src={require("../assets/img/carrusel/Rectangle 14.png")} alt="Imagen 3" />
+            <div className="item testimonios">
+              <div className="description-image">
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do</p>
+                <div className="image-start">
+                  <img className="people" src={require("../assets/img/carrusel/Photo (1).png")} alt="Imagen 1" />
+                  <div className="start-name">
+                    <p><strong> Georgina Danny</strong></p>
+                    <img className="start" src={require("../assets/img/carrusel/Group 174.png")} alt="Imagen 1"  />
+                  </div>
+                </div>
+              </div>
             </div>
             {/* Agrega más elementos según sea necesario */}
           </OwlCarousel>
