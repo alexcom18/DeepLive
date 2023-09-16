@@ -5,6 +5,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import { HashLink } from 'react-router-hash-link';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+// import Carusel from "./Carusel";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -131,6 +132,7 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
+      {/* <Carusel/> */}
     </section>
   )
 }

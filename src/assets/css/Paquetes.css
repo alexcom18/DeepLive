@@ -1,0 +1,114 @@
+.paquetes-title {
+  color: #e61a54;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+}
+.paquetes-subtitle {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+}
+.content-paquetes {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  justify-content: center;
+  align-items: center;
+}
+.content-paquetes .carrusel-paquetes {
+  width: 100%;
+}
+.content-paquetes .carrusel-paquetes .images-paquetes {
+  position: relative;
+  height: 26em;
+}
+.content-paquetes .carrusel-paquetes .images-paquetes .numer-image {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.content-paquetes .carrusel-paquetes .images-paquetes .one {
+  top: 3em;
+  left: 5em;
+}
+.content-paquetes .carrusel-paquetes .images-paquetes .two {
+  bottom: 2em;
+  left: 3em;
+}
+.content-paquetes .carrusel-paquetes .images-paquetes img {
+  object-fit: cover;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+}
+
+.content-paquetes .description-paquete {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-paquetes .description-paquete .short-description {
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-paquetes .description-paquete .short-description p {
+    font-weight: 400;
+    line-height: 34px;
+    font-size: 18px;
+    opacity: 80%;
+  }
+  .content-paquetes
+    .description-paquete
+    .short-description
+    .button-confirm-paquete {
+    background-color: #e61a54;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    width: 229px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+  }
+  .content-paquetes
+    .description-paquete
+    .short-description
+    .button-confirm-paquete
+    h2 {
+    margin: 0;
+  }
+@media (min-width: 960px) {
+  .content-paquetes {
+    flex-direction: row;
+    gap: 0em;
+    justify-content: space-between;
+  }
+  .content-paquetes .carrusel-paquetes {
+    width: 60%;
+  }
+  .content-paquetes .carrusel-paquetes .images-paquetes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 29em;
+  }
+  .content-paquetes .description-paquete {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
