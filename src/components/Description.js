@@ -2,7 +2,7 @@ import "../assets/css/Description.css";
 
 export function ShortDescription() {
   return (
-    <section className="container-fluid m-section">
+    <section className="container-fluid m-section" id="nosotros">
       <div className="container content">
         <div className="header">
           <div className="images">

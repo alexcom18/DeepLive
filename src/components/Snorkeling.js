@@ -39,7 +39,7 @@ const options = {
   
 function Snorkeling() {
   return (
-    <secttion className="m-section content">
+    <secttion className="m-section content" id="snorkeling">
       <div className="container ">
         <div className="text-desciption">
           <h1>Snorkeling</h1>

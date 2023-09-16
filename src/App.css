@@ -76,6 +76,7 @@ input:focus, textarea:focus, select:focus {
 }
 .m-section {
   margin: 4.8em 0em;
+  padding: 3em 0;
 }
 
 p.success {

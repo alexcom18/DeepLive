@@ -35,7 +35,7 @@ const options = {
 
 function Testimonio() {
   return (
-    <section className="m-section content">
+    <section className="m-section content" id="testimonios">
       <div className="container colum-content">
         <div className="text-description">
           <h1>Testimonios</h1>

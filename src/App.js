@@ -13,6 +13,7 @@ import ToursCarrusel from "./components/ToursCarrusel"
 import Cursos from "./components/Cursos"
 import Snorkeling from './components/Snorkeling';
 import Testimonio from './components/Testimonio';
+import Paquetes from './components/Paquetes';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Banner />
       <ShortDescription />
       <ToursCarrusel />
+      <Paquetes/>
       <Cursos/>
       <Snorkeling/>
       <Testimonio/>

@@ -41,7 +41,7 @@ const options = {
 
 function ToursCarrusel() {
   return (
-    <sectiopn>
+    <sectiopn id="tours">
       <div className="container m-section content">
         <div className="text">
           <h2>

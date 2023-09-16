@@ -38,10 +38,10 @@ const options = {
 
 function Cursos() {
   return (
-    <section className="m-section content-curso">
+    <section className="m-section content-curso" id="cursos">
       <div className="container content-description">
         <div className="title-content">
-          <h1>
+          <h1 className="text-title">
             Deep Life Divers <span>cursos</span>
           </h1>
         </div>

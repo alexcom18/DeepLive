@@ -3,6 +3,15 @@
     padding: 2.8em 0;
 
 }
+.content-description .title-content{
+    padding-bottom: 2em;
+}
+.content-description .title-content .text-title h1{
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: 700;
+    
+}
 .content-description .title-content span{
     color: #E61A54;
 }
