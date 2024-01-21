@@ -1,0 +1,47 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .circle {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .circle1 {
+    border-color: white;
+  }
+  
+  .circle2 {
+    border-color: white;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .circle3 {
+    border-color: white;
+    width: 120px;
+    height: 120px;
+    position: relative;
+  }
+  
+  .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-left: 15px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  
